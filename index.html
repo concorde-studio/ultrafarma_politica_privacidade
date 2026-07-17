@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Política de Privacidade da Ultrafarma — Canal de Atendimento via WhatsApp e Política de Privacidade geral, em conformidade com a LGPD.">
+<title>Política de Privacidade — Ultrafarma</title>
+<style>
+  :root{
+    --uf-orange:#F47920;
+    --uf-orange-dark:#E15E00;
+    --uf-blue:#0B2C55;
+    --uf-blue-soft:#123c72;
+    --ink:#222b36;
+    --muted:#5c6773;
+    --line:#e7e9ee;
+    --bg:#f5f6f8;
+    --card:#ffffff;
+    --radius:14px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink);
+    background:var(--bg);
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  /* Header */
+  .site-header{
+    background:var(--uf-blue);
+    background:linear-gradient(105deg,var(--uf-blue) 0%,var(--uf-blue-soft) 100%);
+    color:#fff;
+    padding:26px 20px;
+  }
+  .header-inner{
+    max-width:900px;margin:0 auto;
+    display:flex;align-items:center;gap:16px;flex-wrap:wrap;
+  }
+  .logo{
+    font-weight:800;font-size:1.6rem;letter-spacing:.3px;
+    color:#fff;text-decoration:none;line-height:1;
+  }
+  .logo span{color:var(--uf-orange);}
+  .header-tag{
+    margin-left:auto;
+    font-size:.78rem;font-weight:600;text-transform:uppercase;letter-spacing:.08em;
+    background:rgba(244,121,32,.18);
+    color:#ffd9b8;
+    padding:6px 12px;border-radius:999px;
+    border:1px solid rgba(244,121,32,.4);
+  }
+
+  /* Hero */
+  .hero{
+    background:var(--uf-orange);
+    background:linear-gradient(100deg,var(--uf-orange) 0%,var(--uf-orange-dark) 100%);
+    color:#fff;padding:38px 20px 44px;
+  }
+  .hero-inner{max-width:900px;margin:0 auto;}
+  .hero h1{margin:0 0 8px;font-size:1.9rem;line-height:1.2;}
+  .hero p{margin:0;opacity:.95;font-size:1rem;}
+  .updated{
+    display:inline-block;margin-top:16px;font-size:.85rem;
+    background:rgba(255,255,255,.18);padding:5px 12px;border-radius:999px;
+  }
+
+  /* Layout */
+  .wrap{max-width:900px;margin:-24px auto 60px;padding:0 20px;}
+  .card{
+    background:var(--card);border:1px solid var(--line);
+    border-radius:var(--radius);padding:32px 34px;
+    box-shadow:0 6px 24px rgba(11,44,85,.06);
+  }
+  @media (max-width:560px){.card{padding:24px 20px;}}
+
+  section{scroll-margin-top:20px;}
+  h2{
+    color:var(--uf-blue);font-size:1.28rem;margin:34px 0 12px;
+    padding-bottom:8px;border-bottom:2px solid var(--line);
+    display:flex;align-items:baseline;gap:10px;
+  }
+  h2:first-of-type{margin-top:6px;}
+  h2 .num{
+    color:var(--uf-orange);font-weight:800;font-size:.95rem;
+    background:#fff3e8;border-radius:8px;padding:2px 9px;flex:none;
+  }
+  h3{color:var(--uf-blue-soft);font-size:1.05rem;margin:22px 0 8px;}
+  p{margin:0 0 14px;}
+  ul{margin:0 0 16px;padding-left:22px;}
+  li{margin:6px 0;}
+  a{color:var(--uf-orange-dark);}
+  a:hover{color:var(--uf-orange);}
+  strong{color:var(--ink);}
+  .lead{font-size:1.02rem;color:var(--muted);}
+
+  .todo{
+    background:#fff8ee;border:1px dashed var(--uf-orange);
+    color:#8a5a1e;border-radius:8px;padding:2px 8px;font-size:.9rem;font-weight:600;
+  }
+
+  .divider{
+    margin:46px 0 8px;text-align:center;position:relative;
+  }
+  .divider::before{
+    content:"";position:absolute;top:50%;left:0;right:0;height:1px;background:var(--line);
+  }
+  .divider span{
+    position:relative;background:var(--card);padding:0 18px;
+    color:var(--uf-blue);font-weight:700;font-size:1.15rem;
+  }
+
+  .toc{
+    background:#f8fafc;border:1px solid var(--line);border-radius:12px;
+    padding:18px 22px;margin:0 0 26px;
+  }
+  .toc h4{margin:0 0 10px;color:var(--uf-blue);font-size:.95rem;text-transform:uppercase;letter-spacing:.05em;}
+  .toc ul{columns:2;column-gap:28px;padding-left:18px;margin:0;font-size:.92rem;}
+  @media (max-width:560px){.toc ul{columns:1;}}
+  .toc a{color:var(--uf-blue-soft);text-decoration:none;}
+  .toc a:hover{color:var(--uf-orange-dark);text-decoration:underline;}
+
+  /* Footer */
+  .site-footer{
+    background:var(--uf-blue);color:#c6d2e2;text-align:center;
+    padding:26px 20px;font-size:.85rem;
+  }
+  .site-footer a{color:var(--uf-orange);}
+  .site-footer strong{color:#fff;}
+  .back-top{
+    display:inline-block;margin-top:10px;font-size:.8rem;
+  }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="logo" href="https://www.ultrafarma.com.br">Ultra<span>farma</span></a>
+    <span class="header-tag">Privacidade &amp; LGPD</span>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="hero-inner">
+    <h1>Política de Privacidade</h1>
+    <p>Canal de Atendimento via WhatsApp &amp; Política de Privacidade geral da Ultrafarma</p>
+    <span class="updated">Última atualização: 17 de julho de 2026</span>
+  </div>
+</div>
+
+<main class="wrap">
+<div class="card">
+
+  <p class="lead"><strong>Ultrafarma Saúde</strong> — Esta página reúne a política de privacidade específica do
+  atendimento via WhatsApp e a política de privacidade geral da Ultrafarma, ambas em conformidade com a
+  Lei Geral de Proteção de Dados (Lei nº 13.709/2018).</p>
+
+  <nav class="toc" aria-label="Índice — Atendimento via WhatsApp">
+    <h4>Atendimento via WhatsApp</h4>
+    <ul>
+      <li><a href="#wa-1">1. Sobre este canal</a></li>
+      <li><a href="#wa-2">2. Dados coletados</a></li>
+      <li><a href="#wa-3">3. Finalidade</a></li>
+      <li><a href="#wa-4">4. Compartilhamento</a></li>
+      <li><a href="#wa-5">5. Retenção e exclusão</a></li>
+      <li><a href="#wa-6">6. Direitos do titular</a></li>
+      <li><a href="#wa-7">7. Contato</a></li>
+      <li><a href="#wa-8">8. Política geral</a></li>
+    </ul>
+  </nav>
+
+  <!-- ============ PARTE 1: WHATSAPP ============ -->
+  <section id="wa-1">
+    <h2><span class="num">1</span> Sobre este canal</h2>
+    <p>Esta política descreve o tratamento de dados pessoais no canal de atendimento ao cliente da Ultrafarma
+    via WhatsApp, operado por meio da API oficial do WhatsApp Business (Meta Platforms, Inc.).</p>
+  </section>
+
+  <section id="wa-2">
+    <h2><span class="num">2</span> Dados coletados</h2>
+    <p>Ao interagir com nosso atendimento via WhatsApp, podemos tratar:</p>
+    <ul>
+      <li>Número de telefone e nome de perfil do WhatsApp;</li>
+      <li>Conteúdo das mensagens enviadas ao canal;</li>
+      <li>Dados de pedidos e atendimento necessários para responder à sua solicitação
+      (ex.: número do pedido, status de entrega).</li>
+    </ul>
+  </section>
+
+  <section id="wa-3">
+    <h2><span class="num">3</span> Finalidade</h2>
+    <p>Os dados são utilizados exclusivamente para:</p>
+    <ul>
+      <li>Prestar atendimento, orientação e suporte ao cliente;</li>
+      <li>Encaminhar solicitações à equipe de atendimento humano quando necessário;</li>
+      <li>Cumprir obrigações legais e regulatórias.</li>
+    </ul>
+    <p>Não utilizamos os dados deste canal para envio de publicidade sem consentimento, nem os vendemos ou
+    compartilhamos com terceiros para fins comerciais.</p>
+  </section>
+
+  <section id="wa-4">
+    <h2><span class="num">4</span> Compartilhamento</h2>
+    <p>As mensagens trafegam pela infraestrutura da Meta Platforms, Inc. (WhatsApp Business Platform),
+    sujeitas também aos termos e à política de privacidade do WhatsApp. Internamente, o acesso é restrito à
+    equipe de atendimento e aos operadores técnicos do canal.</p>
+  </section>
+
+  <section id="wa-5">
+    <h2><span class="num">5</span> Retenção e exclusão</h2>
+    <p>Os dados de atendimento são mantidos pelo período necessário ao cumprimento das finalidades acima e
+    das obrigações legais. Você pode solicitar a exclusão dos seus dados de atendimento a qualquer momento
+    pelos contatos abaixo.</p>
+  </section>
+
+  <section id="wa-6">
+    <h2><span class="num">6</span> Direitos do titular (LGPD)</h2>
+    <p>Nos termos da Lei nº 13.709/2018 (LGPD), você pode solicitar: confirmação de tratamento, acesso,
+    correção, anonimização, exclusão e informações sobre compartilhamento.</p>
+  </section>
+
+  <section id="wa-7">
+    <h2><span class="num">7</span> Contato</h2>
+    <ul>
+      <li>Atendimento: <span class="todo">COMPLETAR — e-mail/telefone oficial da Ultrafarma</span></li>
+      <li>Encarregado de dados (DPO): <span class="todo">COMPLETAR</span></li>
+    </ul>
+  </section>
+
+  <section id="wa-8">
+    <h2><span class="num">8</span> Política geral</h2>
+    <p>A política de privacidade completa da Ultrafarma está disponível em nosso site oficial:
+    <a href="https://www.ultrafarma.com.br">https://www.ultrafarma.com.br</a></p>
+  </section>
+
+  <!-- ============ PARTE 2: POLÍTICA GERAL ============ -->
+  <div class="divider"><span>Política de Privacidade Ultrafarma</span></div>
+
+  <p>A Política de Privacidade da Ultrafarma foi elaborada para reafirmar nosso compromisso com a
+  privacidade e a segurança dos dados pessoais que coletamos dos nossos clientes e usuários. A presente
+  política tem como objetivo descrever como seus dados pessoais são obtidos, utilizados, compartilhados e
+  armazenados, bem como quais medidas aplicamos para mantê-los seguros. Leia com atenção as informações
+  aqui apresentadas, pois ao navegar no site da Ultrafarma
+  (<a href="https://www.ultrafarma.com.br">www.ultrafarma.com.br</a>), o usuário está concordando com os
+  termos e condições previstos nesta Política de Privacidade e com todos os outros avisos que possam
+  aparecer nas páginas deste Portal, pertinentes a referida política.</p>
+
+  <section>
+    <h2>Definições</h2>
+    <ul>
+      <li>Denomina-se “Portal Ultrafarma” o site destinado ao comércio eletrônico, cujo domínio é
+      www.ultrafarma.com.br;</li>
+      <li>Denomina-se “a Ultrafarma” à empresa Ultrafarma Saúde EIRELI como um todo, incluindo seu comércio
+      eletrônico, institucional e rede de lojas físicas.</li>
+      <li>Classificam-se como “clientes” todas as pessoas que utilizam os produtos e / ou serviços
+      oferecidos pelo Portal Ultrafarma, pagos ou não.</li>
+      <li>Classificam-se “usuários” todas as pessoas que se cadastram no Portal Ultrafarma e recebem uma
+      identificação individual e exclusiva.</li>
+      <li>Entende-se por identificação individual toda informação que não está disponível para o público em
+      geral e é atribuída de forma individual e personalizada a um determinado cliente/usuário. São exemplos
+      de dados de identificação individual os números de CPF ou CNPJ, dados para contato e cobrança.</li>
+      <li>Criptografia é o nome dado ao processo de codificação de informações. Na criptografia as
+      informações são codificadas (embaralhadas) na origem e decodificadas no destino, dificultando, dessa
+      forma, que sejam decifradas durante o tráfego na internet.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Como, quando e quais dados são coletados?</h2>
+    <p>São coletados dados pessoais, capazes de identificar os usuários, quando estes:</p>
+    <ul>
+      <li>Se cadastram no Portal Ultrafarma;</li>
+      <li>Quando efetuam o pagamento de seu pedido através de cartão de débito e crédito;</li>
+      <li>Ao entrarem em contato com o Portal Ultrafarma pelo Chat On-line, Atendimento por E-mail e Fale
+      com o Sidney Oliveira.</li>
+      <li>Preenchimento de formulários.</li>
+    </ul>
+    <p><strong>Dados pessoais fornecidos voluntariamente para o cadastro pessoal no e-commerce e
+    aplicativo:</strong> nome completo, número do CPF, data de nascimento, gênero, telefone, celular,
+    e-mail, senha de acesso, endereço de entrega e cartão de débito e crédito quando a compra for realizada
+    por uma destas formas de pagamento.</p>
+    <p><strong>Dados pessoais coletados automaticamente:</strong> algumas informações podem ser coletadas
+    automaticamente mesmo que o usuário não esteja cadastrado em nosso e-commerce e aplicativo, são eles:</p>
+    <ul>
+      <li>Endereço de IP;</li>
+      <li>Contagem de visualizações;</li>
+      <li>Página visitadas;</li>
+      <li>Produtos e categorias visitados;</li>
+      <li>Informação sobre o dispositivo utilizado para navegação.</li>
+    </ul>
+    <p>As informações solicitadas aos usuários são as mínimas necessárias para a execução das
+    funcionalidades disponíveis no Portal Ultrafarma, bem como, para manutenção da segurança das
+    transações, tais como dados pessoais que validem seu cadastro e comprovem a veracidade das informações
+    fornecidas ou dados de pagamento que permitam que uma transação de cobrança seja realizada.</p>
+    <p>A Ultrafarma poderá confirmar os dados pessoais informados pelo usuário consultando entidades
+    públicas, companhias especializadas, banco de dados, para o que fica expressamente autorizado. Tal
+    atitude, contudo, não cessa nem diminui a responsabilidade do usuário quanto à exatidão e veracidade dos
+    dados fornecidos, motivo pelo qual a Ultrafarma poderá, a seu exclusivo critério, suspender e/ou
+    cancelar o cadastro do usuário, a qualquer momento, caso detecte qualquer inexatidão ou suspeita de
+    fraude.</p>
+    <p>O usuário garante a veracidade e exatidão das informações e dados fornecidos ao Portal Ultrafarma,
+    assumindo a correspondente responsabilidade caso os mesmos não sejam exatos, bem como se compromete a
+    mantê-los atualizados.</p>
+    <p>O Portal Ultrafarma não assume qualquer responsabilidade em caso de inexatidão dos dados
+    informados.</p>
+    <p>O usuário que cadastrar-se no Portal Ultrafarma utilizando dados de terceiros poderá incorrer nos
+    crimes de falsa identidade e estelionato, ambos previstos no Código Penal, sem prejuízo de eventual
+    responsabilização por legislação específica.</p>
+    <p>O usuário poderá, a qualquer momento, solicitar alteração e/ou retificação de seus dados, bastando
+    para tanto, acessar seu cadastro diretamente por meio de local próprio, indicado no Portal Ultrafarma ou
+    por meio do formulário de atendimento ao cliente.</p>
+  </section>
+
+  <section>
+    <h2>Cookies e tecnologias de monitoramento</h2>
+    <p>Através de cookies há o reconhecimento dos computadores que acessam o site e acompanham a navegação
+    do usuário dentro da nossa página, de maneira a personalizá-la de acordo com o perfil de cada cliente.
+    Os cookies não armazenam nenhuma informação pessoal, apenas contêm os dados de login do usuário. De todo
+    modo, você pode descartar o cookie de seu computador quando desejar ou, ainda, configurar seu browser de
+    internet para rejeitar cookies. Ressaltamos, no entanto, que essa última hipótese pode limitar algumas
+    funcionalidades do Portal Ultrafarma.</p>
+    <h3>Google Analytics</h3>
+    <p>O Google Analytics é uma ferramenta proprietária do Google que monitora e analisa todo o tipo de
+    tráfego que um site recebe. Através dela é possível identificar quantos usuários estão acessando o site
+    em determinado momento, qual a taxa de engajamento, qual o tempo de permanência nas sessões do site,
+    qual a origem dos canais de mídia/campanha, horários de maior acesso, páginas mais acessadas,
+    engajamento por campanha/produto, produtos vistos com maior frequência e por mais tempo e relatórios de
+    vendas.</p>
+    <h3>Pixel do Facebook</h3>
+    <p>O pixel do Facebook é uma ferramenta analítica oferecida para usuários da plataforma de anúncios
+    Facebook Adds, a qual permite monitorar conversões e alcançar públicos importantes. Assim, ajuda a medir
+    a eficácia das campanhas e a mensurar as ações dos visitantes de um site.</p>
+    <h3>Linx</h3>
+    <p>A Linx é especialista em software de gestão (ERP e POS) para as mais diversas verticais do setor
+    varejista no Brasil. Ela possui um conjunto de soluções com ferramentas que atuam de forma complementar
+    em toda a jornada de compra do consumidor.</p>
+  </section>
+
+  <section>
+    <h2>Como os dados pessoais são utilizados?</h2>
+    <p>Os dados pessoais são utilizados para garantir uma melhor experiência na sua compra, assim como
+    garantir um atendimento de qualidade, sempre com o compromisso de mantê-los sob o mais completo sigilo,
+    vinculando-os unicamente ao seu registro e utilizando-os para:</p>
+    <ul>
+      <li>Identificar corretamente o usuário;</li>
+      <li>Realizar a entrega e a cobrança dos produtos adquiridos no Portal Ultrafarma;</li>
+      <li>Obter estatísticas genéricas para identificação do perfil de nossos clientes e desenvolvimento de
+      nossas campanhas;</li>
+      <li>Resolução de eventuais questões legais relacionadas ao Portal;</li>
+      <li>Viabilizar a interatividade entre usuário cliente e usuário administrador;</li>
+      <li>Informar a respeito de novos eventos;</li>
+      <li>Manter atualizados os cadastros dos usuários para fins de contato telefônico, e-mail, mala direta,
+      SMS ou outros meios de comunicação previamente autorizados;</li>
+      <li>Aperfeiçoar a usabilidade e a experiência interativa durante a navegação do usuário no Portal;</li>
+      <li>Elaborar estatísticas gerais, sem que haja identificação dos usuários;</li>
+      <li>Para realizar atendimento de dúvidas ou solicitações pelo chat on-line, atendimento por e-mail e
+      fale com o Sidney Oliveira;</li>
+      <li>Realizar pesquisas e campanhas de comunicação e marketing de relacionamento, bem como divulgar
+      ofertas de parceiros.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Como e com quem compartilhamos seus dados?</h2>
+    <p>Processamos internamente seus dados de cadastro, para fins de entrega, melhora de experiência de uso,
+    compra, bem como controles antifraude melhor explicados a seguir. Em hipótese alguma comercializamos
+    dados pessoais. Apresentamos a seguir um resumo destas possibilidades:</p>
+    <ul>
+      <li><strong>Operadoras de cartões e meios de pagamentos:</strong> Nas transações de pagamento por
+      cartão de crédito e débito os dados do cartão são compartilhados para validação junto as operadoras de
+      cartões e meios de pagamento.</li>
+      <li><strong>Empresa de Antifraude:</strong> Os dados pessoais e de compra são compartilhados para
+      análise do sistema de antifraude.</li>
+      <li><strong>Transportadoras e Correios:</strong> Para realizar a entrega do seu pedido precisamos
+      compartilhar algumas informações como: nome, endereço e nota fiscal.</li>
+      <li><strong>PBM – Programa de Benefício em Medicamentos:</strong> Quando você compra usando o Programa
+      de benefício em medicamentos (PBM), nós compartilhados os dados pessoais com os parceiros das
+      indústrias para aprovação do desconto.</li>
+      <li><strong>Empresas e consultorias:</strong> Com consultorias e empresas parceiras para sustentação e
+      melhorias do Portal Ultrafarma e ações de marketing (salesforce), todas condicionadas e avaliadas
+      quanto ao cumprimento das normas da LGPD.</li>
+      <li><strong>Autoridades judiciais, policiais e governamentais:</strong> nós devemos fornecer dados
+      pessoais de Clientes e/ou Usuários, em atendimento à ordem judicial, solicitações de autoridades
+      administrativas, obrigação legal ou regulatória, bem como para agir de forma colaborativa com
+      autoridades governamentais, em geral em investigações envolvendo atos ilícitos.</li>
+    </ul>
+    <h3>O que não fazemos</h3>
+    <p>É parte de nosso compromisso com a transparência informá-lo também a respeito daquilo que não
+    praticamos. Acreditamos que esse tipo de conteúdo seja importante para solidificar sua confiança em
+    nossas atividades e para evitar interpretações equivocadas sobre informações divulgadas por terceiros.
+    Desse modo, gostaríamos de informá-lo que não realizamos nenhuma das seguintes atividades:</p>
+    <ul>
+      <li>Não fazemos condicionamento de acesso aos nossos produtos ou serviços ao fornecimento de dados
+      pessoais ou dados pessoais sensíveis além daqueles estritamente necessários para o desempenho de
+      nossas atividades ou para o cumprimento de nossas obrigações legais ou regulatórias;</li>
+      <li>Não fazemos utilização de dados pessoais sensíveis de clientes para finalidades não autorizadas
+      pela legislação vigente, ou, quando necessário, sem a obtenção de consentimento livre, informado e
+      inequívoco do Titular;</li>
+      <li>Não fazemos análises preditivas e criação de perfil comportamental de clientes, com base em
+      histórico de compras de medicamentos e/ou produtos de saúde, sem a obtenção de consentimento livre,
+      informado e inequívoco do Titular;</li>
+      <li>Não fazemos compartilhamento de dados pessoais com terceiros para finalidades incompatíveis com os
+      produtos ou serviços adquiridos por nossos clientes, ou em desacordo com a legislação vigente;</li>
+      <li>Não fazemos comercialização de dados pessoais, incluindo dados sensíveis, ou qualquer outra
+      espécie de tratamento ilícito ou não autorizado pela legislação vigente ou pelo respectivo
+      Titular;</li>
+      <li>Não fazemos transferência internacional de dados pessoais desacompanhada de medidas técnicas,
+      administrativas e organizacionais aptas a assegurar um nível de proteção adequado às informações de
+      nossos clientes; e</li>
+      <li>Não fazemos realização de qualquer atividade de tratamento de dados pessoais para fins
+      discriminatórios ou abusivos.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Como armazenamos e protegemos seus dados?</h2>
+    <p>Os dados são armazenados de forma segura em data centers localizados no Brasil. São adotadas todas as
+    medidas legais aplicáveis, em conformidade com a Lei Geral de Proteção de Dados e suas futuras
+    regulamentações, garantindo a proteção e privacidade dos seus dados pessoais. Visando manter íntegra a
+    sua confiança na utilização de nossos serviços, adotamos medidas técnicas, administrativa e
+    organizacionais aptas a proteger seus dados pessoais e dados sensíveis contra acessos não autorizados ou
+    situações acidentais ou ilícitas de destruição, perda, alteração, comunicação ou qualquer forma de
+    tratamento inadequado ou ilícito. Para isso, adotamos rigorosas medidas de segurança para garantir que
+    suas informações estejam protegidas de acordo com elevados padrões de segurança e proteção, tais como:
+    (i) um Sistema de Governança de Segurança da Informação; (ii) Política de Segurança da Informação que
+    contemple as nossas diretrizes e orientações sobre a proteção de informações e dados de nossos clientes,
+    com atualizações periódicas; (iii) Política de Classificação da Informação, estabelecida e implementada,
+    para garantir a correta atribuição do grau de sensibilidade das informações e dados pessoais que
+    armazenamos; (iv) uso de técnicas de criptografia em repouso e transferência; (v) manutenção de cópias
+    de segurança (“backups”) para fins de recuperação em caso de desastres, com testes de restauração
+    periódicos visando garantir a integridade e a disponibilidade no caso do uso emergencial; (vi) Acordos
+    de Confidencialidade com funcionários, prestadores de serviços e parceiros, visando evitar a divulgação
+    e/ou transmissão não autorizada de dados ou informações; e (vii) testes de penetração periódicos, com o
+    objetivo de garantir a segurança de nossos sistemas, aplicações e ambientes.</p>
+  </section>
+
+  <section>
+    <h2>Direitos do titular dos dados pessoais</h2>
+    <p>Além das informações disponibilizadas nesta Política, você pode também exercer os direitos previstos
+    na Lei Geral de Proteção de Dados, entre eles:</p>
+    <ul>
+      <li>Acesso aos dados pessoais;</li>
+      <li>Correção e atualização dos dados pessoais;</li>
+      <li>Revogação do consentimento;</li>
+      <li>Confirmação da existência de tratamento de dados pessoais;</li>
+      <li>Eliminação dos dados pessoais tratados com o consentimento ou desnecessários, excessivos ou quando
+      entender que algum ponto da LGPD não foi atendido.</li>
+      <li>Informação sobre quando, como e porque os dados pessoais podem ser compartilhados, com quais
+      empresas, parceiros e/ou instituições, ou receber dados pessoais referentes a você.</li>
+      <li>Informação sobre a possibilidade de não fornecer consentimento e sobre as consequências da
+      negativa, quando aplicável.</li>
+    </ul>
+    <p>Sempre que desejar, você poderá exercer tais direitos por meio dos seguintes canais: (a) por meio de
+    contato através do endereço eletrônico Contato DPO ou canais de atendimento (SAC, Ouvidoria,
+    Atendimento); (b) em nossas farmácias, informando a um de nossos representantes. Nesse caso, você pode
+    ser direcionado a um de nossos canais digitais para exercer direitos específicos com segurança. No
+    entanto, informamos que tais direitos não são absolutos. Em determinadas situações, não poderemos
+    atender às suas solicitações em razão da existência de obrigações legais ou regulatórias que nos impeçam
+    de respeitar sua vontade. Em alguns casos, também, é possível que sua solicitação seja recusada para que
+    possamos assegurar o exercício regular de nossos direitos, quer seja em contratos, quer seja em
+    processos judiciais, administrativos ou arbitrais. Caso isso ocorra, você será devidamente comunicado a
+    respeito da impossibilidade de atendimento, de maneira fundamentada. Você não é obrigado a nos fornecer
+    seu consentimento nos casos em que solicitarmos sua autorização para utilizar seus dados pessoais.
+    Sempre o informaremos de qual será consequência no fornecimento de nossos produtos ou serviços caso uma
+    solicitação de consentimento seja negada por você.</p>
+  </section>
+
+  <section>
+    <h2>Retenção e exclusão dos dados pessoais</h2>
+    <p>Durante todo o período que você for nosso cliente, nós trataremos seus dados pessoais com elevados
+    níveis de proteção e garantindo sua privacidade.</p>
+    <p>Quando aplicável, e mesmo se você optar por excluir seus dados pessoais da nossa base de cadastro, a
+    Ultrafarma poderá reter alguns ou todos os seus dados pessoais por períodos adicionais para cumprimento
+    de obrigações legais ou regulatórias, para o exercício regular de direitos da Ultrafarma, eventuais
+    ações judiciais, fins de auditoria de diversas naturezas, ou outros prazos definidos e fundamentados por
+    bases legais que justifiquem a retenção destes dados.</p>
+  </section>
+
+  <section>
+    <h2>Alteração desta Política de Privacidade</h2>
+    <p>Em busca de melhorar nossos serviços e aperfeiçoar a experiência de nossos clientes, sempre que
+    necessário, nossas práticas de tratamento de dados pessoais poderão sofrer alterações com a inclusão de
+    novas funcionalidades, sempre visando a adequação e contemporaneidade de ferramentas que permitam
+    assegurar a segurança dos dados, nos termos da LGPD.</p>
+    <p>Toda vez que alguma condição relevante desta Política de Privacidade for alterada, essas alterações
+    serão comunicadas por meio de um dos canais disponibilizados por você durante o seu cadastro
+    (e-mail).</p>
+  </section>
+
+  <section>
+    <h2>Acesso ao perfil e conta</h2>
+    <p>É de responsabilidade do usuário a guarda de sua senha e de seu login de acesso. Não é recomendável a
+    utilização de senhas óbvias, como datas de nascimento, nomes ou sequências numéricas. Recomendamos que a
+    senha possua caracteres especiais e alfanuméricos. Caberá ao usuário alterar sua senha de acesso
+    periodicamente. Caso o usuário tome conhecimento ou apenas suspeite que sua senha foi descoberta, ele
+    também deverá alterá-la imediatamente.</p>
+  </section>
+
+  <section>
+    <h2>Envio de comunicados e mensagens publicitárias</h2>
+    <p>Os comunicados, newsletters, avisos de ofertas e mensagens publicitárias enviadas por e-mail trarão,
+    obrigatoriamente, opção de cancelamento do envio daquele tipo de mensagem por parte do Portal. A
+    solicitação será atendida no tempo mínimo necessário para realização desta execução.</p>
+    <p>O opt-out é feito através do e-mail do usuário, portanto usuários que possuam mais de um cadastro
+    poderão continuar a receber os comunicados ou as mensagens publicitárias no e-mail que não foi
+    descadastrado.</p>
+    <p>Os serviços de envio de e-mails são realizados pelo Portal Ultrafarma ou por ferramenta interna, que
+    utilizará seus próprios servidores para realizar o envio.</p>
+  </section>
+
+  <section>
+    <h2>Links externos</h2>
+    <p>O Portal Ultrafarma poderá ter acesso a links para outros sites externos cujos conteúdos e políticas
+    de privacidade não são de sua responsabilidade. Assim, recomendamos que, ao serem redirecionados para
+    sites externos, os usuários consultem sempre as respectivas políticas de privacidade antes de fornecerem
+    seus dados ou informações.</p>
+  </section>
+
+  <section>
+    <h2>Modificações de nossa Política de Privacidade</h2>
+    <p>Ao utilizar os nossos serviços, o usuário concorda e aceita os termos da política de privacidade
+    vigente na data e, portanto, deve verificá-la previamente cada vez que visitar este Portal.</p>
+  </section>
+
+  <section>
+    <h2>Disposições gerais</h2>
+    <p>A presente política de privacidade é parte integrante dos Termos e Condições de Uso do Portal
+    Ultrafarma.</p>
+  </section>
+
+  <section>
+    <h2>Lei aplicável e jurisdição</h2>
+    <p>A presente política de privacidade é regida pela legislação da República Federativa do Brasil. Seu
+    texto deverá ser interpretado no idioma português e os usuários do Portal Ultrafarma submetem ao Foro da
+    Comarca da Capital do Estado de São Paulo.</p>
+  </section>
+
+  <section>
+    <h2>Dúvidas</h2>
+    <p>Para obter mais informações ou sanar dúvidas sobre nossa política de privacidade, contate-nos através
+    do Atendimento por e-mail ou Chat Online.</p>
+  </section>
+
+</div>
+</main>
+
+<footer class="site-footer">
+  <div>
+    <strong>Ultrafarma Saúde</strong> — Política de Privacidade · Última atualização: 17 de julho de 2026
+  </div>
+  <div>Em conformidade com a Lei nº 13.709/2018 (LGPD)</div>
+  <a class="back-top" href="#top">↑ Voltar ao topo</a>
+</footer>
+
+</body>
+</html>
